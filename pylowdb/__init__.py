@@ -11,6 +11,7 @@ __all__ = [
     'Adapter',
     'TextFile',
     'JsonFile',
+    'YAMLFile',
     'Memory',
     'MissingAdapterError',
     'Low'
