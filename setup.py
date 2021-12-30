@@ -66,11 +66,10 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
         "Operating System :: OS Independent"
     ],
-    packages=['pylowdb', 'tests'],
 
     install_requires=['PyYAML'],
 
-    project_urls={  # Optional
+    project_urls={ 
         'Bug Reports': 'https://github.com/Ho011/pylowdb/issues',
         'Funding': 'https://www.buymeacoffee.com/HusseinSarea',
         'Source': 'https://github.com/Ho011/pyraylib/',
