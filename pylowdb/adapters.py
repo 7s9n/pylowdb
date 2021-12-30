@@ -7,6 +7,13 @@ import os
 from os import path
 import json
 
+try:
+    import yaml
+except ImportError as e:
+    print('yaml is not installed, please install it with pip install PyYAML')
+except Exception:
+    print('Error cannot import yaml')
+
 __all__ = [
     'Adapter',
     'TextFile',
@@ -78,8 +85,8 @@ class TextFile(Adapter):
     def write(self, data: str) -> None:
         with open(self.tmp_filename, 'w') as f:
             f.write(data)
-            os.remove(self.filename)
-            os.rename(self.tmp_filename, self.filename)
+        os.remove(self.filename)
+        os.rename(self.tmp_filename, self.filename)
 
 
 class JsonFile(Adapter):
@@ -129,3 +136,32 @@ class Memory(Adapter):
 
     def write(self, data: T) -> None:
         self.data = data
+
+
+class YAMLFile(Adapter):
+    """
+    Adapter for reading and writing YAML files.
+    """
+
+    def __init__(self, filename: str) -> None:
+        """
+        Create a new instance.
+
+        Also creates the storage file, if it doesn't exist.
+
+        :param filename: Where to store the YAML data.
+        :type filename: str
+        """
+        super().__init__()
+        self.adapter: Adapter = TextFile(filename)
+
+    def read(self) -> Union[T, None]:
+        data = self.adapter.read()
+
+        if not data or data is None:
+            return None
+        else:
+            return yaml.safe_load(data)
+
+    def write(self, data: T) -> None:
+        self.adapter.write(yaml.dump(data))
