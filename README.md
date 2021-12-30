@@ -92,7 +92,7 @@ For more example, see [`examples/`](/examples) directory.
 
 ### Classes
 
-Pylowdb has two classes (for synchronous adapters).
+Pylowdb has classes (for synchronous adapters).
 
 #### `Low(adapter)`
 
