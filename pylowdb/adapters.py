@@ -81,7 +81,7 @@ class TextFile(Adapter):
             print(e)
             return None
         else:
-            return data
+            return data or None
 
     def write(self, data: str) -> None:
         with open(self.tmp_filename, 'w') as f:
