@@ -13,7 +13,7 @@ class Low:
     to the database.
     """
 
-    def __init__(self, adapter: Adapter):
+    def __init__(self, adapter: Adapter = None):
         """
         Create a new instance of pylowdb.
 
