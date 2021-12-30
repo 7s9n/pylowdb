@@ -3,6 +3,7 @@ from .adapters import (
     TextFile,
     JsonFile,
     Memory,
+    YAMLFile,
 )
 from .errors import MissingAdapterError
 from .low import Low
