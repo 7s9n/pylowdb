@@ -14,7 +14,7 @@ def read_file(fname):
 
 
 setup(
-    name='pylowdb',
+    name='Pylowdb',
     version='1.0.0',
     packages=find_packages(),
 
