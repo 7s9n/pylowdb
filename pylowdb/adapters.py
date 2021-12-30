@@ -19,6 +19,7 @@ __all__ = [
     'TextFile',
     'JsonFile',
     'Memory',
+    'YAMLFile',
 ]
 
 T = TypeVar('T')
