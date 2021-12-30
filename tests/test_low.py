@@ -45,8 +45,6 @@ class LowTestCase(unittest.TestCase):
 
         os.remove(file)
 
-        os.remove(file)
-
 
 if __name__ == '__main__':
     unittest.main()
