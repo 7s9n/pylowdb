@@ -71,7 +71,7 @@ db.data['posts'][0]
 
 # You can also use this syntax if you prefer
 posts = db.data['posts']
-posts.append('hello world')
+posts.append('hello world'
 
 # Write db.data content to db.json
 db.write()
@@ -99,7 +99,7 @@ Pylowdb has two classes (for synchronous adapters).
 ```python
 from pylowdb import (
     Low,
-    JsonFile,
+    JSONFile,
 )
 db = Low(JSONFile('file.json'))
 db.read()
