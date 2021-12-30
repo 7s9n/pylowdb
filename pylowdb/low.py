@@ -1,6 +1,6 @@
 from typing import TypeVar
-from adapters import Adapter
-from errors import MissingAdapterError
+from .adapters import Adapter
+from .errors import MissingAdapterError
 
 T = TypeVar('T')
 
