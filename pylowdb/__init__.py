@@ -1,7 +1,7 @@
 from .adapters import (
     Adapter,
     TextFile,
-    JsonFile,
+    JSONFile,
     Memory,
     YAMLFile,
 )
@@ -11,7 +11,7 @@ from .low import Low
 __all__ = [
     'Adapter',
     'TextFile',
-    'JsonFile',
+    'JSONFile',
     'YAMLFile',
     'Memory',
     'MissingAdapterError',

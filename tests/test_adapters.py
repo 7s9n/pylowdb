@@ -1,18 +1,18 @@
 import unittest
 import os
 from pylowdb import (
-    JsonFile,
+    JSONFile,
     Memory,
     TextFile,
     YAMLFile,
 )
 
 
-class JsonFileTestCase(unittest.TestCase):
+class JSONFileTestCase(unittest.TestCase):
     def test_json_file(self):
         data = {'a': 1}
         filename = 'tempfile.temp'
-        file = JsonFile(filename)
+        file = JSONFile(filename)
 
         self.assertIsNone(file.read())
 

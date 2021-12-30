@@ -3,7 +3,7 @@ import json
 import os
 
 from pylowdb import MissingAdapterError
-from pylowdb import Low, JsonFile
+from pylowdb import Low, JSONFile
 
 
 def create_json_file(data):
@@ -24,7 +24,7 @@ class LowTestCase(unittest.TestCase):
         file = create_json_file(data)
 
         # Init
-        adapter = JsonFile(file)
+        adapter = JSONFile(file)
         db = Low(adapter)
 
         db.read()

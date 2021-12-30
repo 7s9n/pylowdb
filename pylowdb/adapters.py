@@ -90,7 +90,7 @@ class TextFile(Adapter):
         os.rename(self.tmp_filename, self.filename)
 
 
-class JsonFile(Adapter):
+class JSONFile(Adapter):
     """
     Adapter for reading and writing JSON files.
     """

@@ -48,10 +48,10 @@ import os
 from os import path
 from pylowdb import (
     Low,
-    JsonFile,
+    JSONFile,
 )
 
-// Use JSON file for storage
+# Use JSON file for storage
 file = path.join(os.getcwd(), 'db.json')
 adapter = JSONFile(file)
 db = Low(adapter)
