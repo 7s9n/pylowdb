@@ -12,6 +12,7 @@ class Low:
     Gives access to the database, provides methods to read and write
     to the database.
     """
+
     def __init__(self, adapter: Adapter):
         """
         Create a new instance of pylowdb.
