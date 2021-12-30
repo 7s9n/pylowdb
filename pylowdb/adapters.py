@@ -46,12 +46,13 @@ class TextFile(Adapter):
     Adapter for reading and writing text. Useful for creating custom adapters.
 
     """
+
     def __init__(self, filename: str) -> None:
         """
         Create a new instance.
 
         Also creates the storage file, if it doesn't exist.
-        
+
         :param filename: Where to store the data.
         :type filename: str
         """
@@ -85,12 +86,13 @@ class JsonFile(Adapter):
     """
     Adapter for reading and writing JSON files.
     """
+
     def __init__(self, filename: str) -> None:
         """
         Create a new instance.
 
         Also creates the storage file, if it doesn't exist.
-        
+
         :param filename: Where to store the JSON data.
         :type filename: str
         """
@@ -114,6 +116,7 @@ class Memory(Adapter):
 
     Store the data as it is in memory.
     """
+
     def __init__(self) -> None:
         """
         Create a new instance.
