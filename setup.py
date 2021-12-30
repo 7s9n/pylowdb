@@ -15,7 +15,7 @@ def read_file(fname):
 
 setup(
     name='pylowdb',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
 
     # development metadata
