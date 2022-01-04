@@ -72,6 +72,6 @@ setup(
     project_urls={ 
         'Bug Reports': 'https://github.com/Ho011/pylowdb/issues',
         'Funding': 'https://www.buymeacoffee.com/HusseinSarea',
-        'Source': 'https://github.com/Ho011/pyraylib/',
+        'Source': 'https://github.com/Ho011/pylowdb',
     },
 )
